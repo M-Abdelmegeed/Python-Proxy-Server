@@ -49,6 +49,17 @@ while 1:
         fileExist = "false"
         filetouse = "./cache/" + filename
         print(" ")
+        with open('blockedUrls.txt') as f:
+            for line in f:
+                # print(line)
+                if url in line:
+                    print("Blocked URL!!")
+                    flag=0
+                    break
+                else:
+                    flag=1
+        if flag==0:
+            break
         print("file to use: "+ filetouse)
         try:
             # Check wether the file exist in the cache
