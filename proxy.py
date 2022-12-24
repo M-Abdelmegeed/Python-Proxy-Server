@@ -38,7 +38,6 @@ while 1:
             break
         # Extract the filename from the given message
         # print(message[0].split()[1].decode("utf-8"))
-        # filename = message[0].split()[1].decode("utf-8").split("/")[-1]
         if message != b'':
             filename = message.split()[1].decode("utf-8").rpartition("/")[2]
             hostn= message.split()[4].decode("utf-8")
