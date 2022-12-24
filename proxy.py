@@ -74,7 +74,7 @@ while 1:
             tcpCliSock.send(b'Content-Type:text/html\r\n')
             # Fill in start.
             # Fill in end.
-            print ('Read from cacheEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE')
+            print ('Read from cache')
             for line in outputdata:
                 tcpCliSock.send(line)  
             f.close()
